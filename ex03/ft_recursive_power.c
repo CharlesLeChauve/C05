@@ -6,7 +6,7 @@
 /*   By: tgibert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 17:49:04 by tgibert           #+#    #+#             */
-/*   Updated: 2023/07/24 13:22:06 by tgibert          ###   ########.fr       */
+/*   Updated: 2023/07/25 10:41:32 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@ int	ft_recursive_power(int nb, int power)
 {
 	if (power == 0)
 		return (1);
-	else if (nb <= 0)
-		return (0);
-	else if (nb == 1)
+	else if (power < 0)
 		return (0);
 	else if (power > 1)
 		return (nb * ft_recursive_power(nb, power - 1));
